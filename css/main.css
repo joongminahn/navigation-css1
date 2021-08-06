@@ -11,7 +11,8 @@ img {
 a {
   text-decoration: none;
   color: #333;
-  border-radius: 8px;   
+  border-radius: 8px;
+  padding: 32px 32px;   
 }
 span {
   display: block;
@@ -97,6 +98,9 @@ span {
     letter-spacing: 4px;     
     pointer-events: none; 
      }
+     .wrapper-nav .container-global .global .items-group li:first-child a {
+       padding: 32px 0px;
+      }
    .wrapper-nav .container-global .global .items-group li:hover {
     background-color:greenyellow; 
     transition: all .1s;
