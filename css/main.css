@@ -1,0 +1,115 @@
+/* COMMON */
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  height: 100%; 
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;   
+}
+span {
+  display: block;
+  background-color:#cccccc;
+  width: 140px;
+  margin-top: 4px;  
+}
+.global:first-child .material-icons {
+  display: block;
+  background-color: #FFF3C8;
+  color: wheat;
+  width: 140px;   
+  color: #333;
+  line-height: 100px;
+  margin-top: 2px;
+  font-size: 3em; 
+  border: none;  
+}
+/* MAIN */
+.wrapper {
+  height: 100%;  
+  display: flex;
+  justify-content: center;    
+  position: relative;  
+  /* background-color:blueviolet; */
+}
+.wrapper-nav {  
+  height: 800px;  
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  bottom: 0px;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;  
+}
+.wrapper-nav .container-global {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+    
+}
+.wrapper-nav .container-global .global {  
+  height: 100px;
+  /* background-color:cornflowerblue; */
+  text-align: center;  
+  box-sizing: border-box;
+  line-height: 100px;  
+  cursor: pointer;  
+  font-weight:600;     
+  letter-spacing: 0.4em;
+  display: flex; 
+  margin-left: 12px;
+  
+ }
+ .wrapper-nav .container-global .global .items-group {
+  background-color:darkseagreen;   
+  visibility: hidden;
+  display: flex;     
+  z-index: 1;
+  }  
+ .wrapper-nav .container-global .global span:hover {
+  background-color:greenyellow;
+  transition: all .08s;
+  } 
+ .wrapper-nav .container-global .global:hover .items-group {
+  visibility: visible;  
+}
+  .wrapper-nav .container-global .global .items-group li {
+  width: 120px;
+  border: 2px solid #fff;
+  font-weight: 400;      
+   }
+
+   .wrapper-nav .container-global .global .items-group li:first-child {
+    width: 120px;
+    border: 2px solid #fff;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #F0BD8D;
+    letter-spacing: 4px;     
+    pointer-events: none; 
+     }
+   .wrapper-nav .container-global .global .items-group li:hover {
+    background-color:greenyellow; 
+    transition: all .1s;
+    }
+  .cover {
+    width: 1400px;
+    height: 800px;
+    position: absolute;
+    left: 150px;
+    background-color: white;
+    /* z-index: 1; */
+  }
+  /* .wrapper-nav .container-global .global .items-group li:hover {
+  background-color:greenyellow;
+  transition: all .2s;
+  } */
